@@ -99,17 +99,15 @@
             This website was made with 💖 by <a href="https://www.linkedin.com/in/aleena-harold-peter/" target="_blank" rel="noopener">Aleena Harold Peter</a>
         </footer>
     </div>
-    <div id="lightbox" class="lightbox">
-        <span class="lightbox-close">&times;</span>
+    <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-hidden="true">
+        <button class="lightbox-close" aria-label="Close lightbox">&times;</button>
+        <button class="lightbox-prev" aria-label="Previous image">&#10094;</button>
+        <button class="lightbox-next" aria-label="Next image">&#10095;</button>
 
-        <span class="lightbox-prev">&#10094;</span>
-        <span class="lightbox-next">&#10095;</span>
+        <img class="lightbox-content" id="lightbox-img" src="..." alt="Expanded game image">
+        <p id="lightbox-title" aria-live="polite"></p>
+        </div>
 
-        <img class="lightbox-content" id="lightbox-img" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="Expanded game image">
-
-
-        <p id="lightbox-title"></p>
-    </div>
 
 
 

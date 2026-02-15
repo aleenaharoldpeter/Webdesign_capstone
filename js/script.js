@@ -55,3 +55,24 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 });
+
+
+document.querySelectorAll("#game-pi-gi img").forEach(img => img.setAttribute("tabindex","0"));
+function openLightbox(index) {
+  currentIndex = index;
+  lightbox.style.display = "flex";
+  lightbox.setAttribute('aria-hidden', 'false');
+  showImage(currentIndex);
+  document.querySelector('.lightbox-close').focus();
+}
+
+function closeLightbox() {
+  lightbox.style.display = "none";
+  lightbox.setAttribute('aria-hidden', 'true');
+}
+document.addEventListener('keydown', (e) => {
+  if ((e.key === 'Enter' || e.key === ' ') && document.activeElement.matches('#game-pi-gi img')) {
+    e.preventDefault();
+    document.activeElement.click();
+  }
+});

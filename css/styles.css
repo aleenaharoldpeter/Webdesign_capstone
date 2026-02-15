@@ -10,8 +10,11 @@ body {
     min-height: 100vh;
     flex-direction: column;
 }
-#container {
-    flex:1;
+
+.container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .nav-bar {
@@ -53,7 +56,7 @@ main {
 
 #go-to-home img {
     width: 100%;
-    max-width: 300px;/* controls how big it can get */
+    max-width: 300px;
     height: auto;
     margin-top: 20%;
 }
@@ -128,16 +131,37 @@ main {
     width: 100%; 
 }
 
-@media (min-width: 768px) {
-
+@media (min-width: 768px) and (max-width: 991px) {
     #go-to-home {
-        flex-direction: row;
+        flex-direction: column; 
+        align-items: center;
+        text-align: center;
+    }
+
+    #cats {
+        flex-direction: column;  
+        align-items: center;
+    }
+
+    #paragraph-interests-id > p {
+        width: 90%; 
+    }
+
+    #game-pi-gi {
+        justify-content: center; 
+        gap: 15px;
+    }
+}
+
+@media (min-width: 992px) {
+    #go-to-home {
+        flex-direction: row;      
         justify-content: space-around;
         text-align: left;
     }
 
     #cats {
-        flex-direction: row;
+        flex-direction: row;  
         justify-content: space-around;
     }
 
@@ -229,7 +253,7 @@ main {
 #game-pi-gi img {
     width: 220px;
     height: 220px;
-    object-fit: cover;      /* prevents distortion */
+    object-fit: cover;      
     border-radius: 12px;
     opacity: 0.5;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
@@ -305,3 +329,48 @@ footer>a {
     0 0 20px black;
 }
 
+.carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease;
+    gap: 20px;
+}
+
+.carousel-track img {
+    min-width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+    opacity: 0.7;
+    cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.carousel-track img:hover {
+    transform: scale(1.05);
+    opacity: 1;
+}
+
+.carousel-prev,
+.carousel-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    background: rgba(0,0,0,0.5);
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 5px 12px;
+    border-radius: 6px;
+    z-index: 10;
+}
+
+.carousel-prev { left: 10px; }
+.carousel-next { right: 10px; }
