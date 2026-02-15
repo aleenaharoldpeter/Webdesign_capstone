@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>My Portfolio</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav class="nav-bar" role="navigation" aria-label="Main navigation">
+                <ul>
+                    <li><a href="#go-to-home">Home</a></li>
+                    <li><a href="#go-to-about">About</a></li>
+                    <li><a href="#go-to-work">Work</a></li>
+                    <li><a href="#go-to-interests">Interests</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section id="go-to-home" class="hero">
+                <div class="headings">
+                    <h2 class="slide-up">Hello There,</h2>
+                    <h1 class="rainbow-text slide-up-delay">I'm Aleena</h1>
+                </div>
+
+                <div class="main-gif">
+                    <img class="hero-gif" src="assets/gifs/smiley_sun.gif"
+                         alt="Smiley sun GIF"
+                         title="Here's a GIF of a smiley sun because I'm shy" />
+                </div>
+            </section>
+
+            <section id="go-to-about" class="other-headings">
+                <h2>About Me</h2>
+                <p id="p-about-me">
+                    I'm an Information Science and Engineering student who enjoys building meaningful projects and constantly expanding my technical skill set. I'm particularly interested in full-stack development, problem-solving, and turning ideas into practical, functional applications. I value writing clean, structured code and learning technologies that help me build scalable and impactful solutions.
+                </p>
+            </section>
+
+            <section id="go-to-work" class="other-headings">
+                <h2>My Work</h2>
+                <p id="p-my-work">
+                    I've worked on a variety of projects and I'm constantly learning, improving, and pushing myself to build better solutions.
+                    For more details, feel free to check out my
+                    <a href="https://www.linkedin.com/in/aleena-harold-peter/" target="_blank" rel="noopener">LinkedIn</a>
+                    and
+                    <a href="https://github.com/aleenaharoldpeter" target="_blank" rel="noopener">GitHub</a>.
+                </p>
+            </section>
+
+            <section id="go-to-interests" class="other-headings">
+                <h2>My Interests</h2>
+
+                <div id="cats" class="interest-row">
+                    <div class="paragraph-interests" id="paragraph-interests-id">
+                        <h4>Cats 🐈</h4>
+                        <p>
+                            I'm a cat person. I love how they're cute, feisty, and unapologetically sassy. They're independent,
+                            observant, and somehow manage to act like they own the place — which, honestly, they probably do. What I admire most
+                            is that you can't force affection from a cat. You have to earn their trust, and when you do, it feels special.
+                            There's something comforting about their quiet presence, soft purring, and random bursts of chaos.
+                            These fur babies may act aloof, but they're full of personality and warmth once they choose you.
+                        </p>
+                    </div>
+
+                    <div class="gif-pic" id="cat-gif">
+                        <img src="assets/gifs/cat.gif" alt="A black kitty looking outside the window">
+                    </div>
+                </div>
+
+                <div id="games" class="interest-row">
+                    <div class="paragraph-interests">
+                        <h4>Games 🎮</h4>
+                        <p>
+                            I love games. It's amazing how we can get pulled into a different world and play a role — whether hero or anti-hero.
+                            Games are therapeutic for me. I keep things simple here (clips/GIFs) because I can't use copyrighted images —
+                            hover over the images if you can't guess them!
+                        </p>
+                    </div>
+
+                    <div class="gif-pic" id="game-pi-gi" aria-label="game gallery">
+                        <img src="assets/gifs/vc.gif" alt="Neon city skyline" title="Vice nights, fast cars, and 80s chaos.">
+                        <img src="assets/images/aa.jpg" alt="Courtroom drama" title="Objection! The truth always comes out in the end.">
+                        <img src="assets/images/noir.jpg" alt="Dark noir atmosphere" title="Pain, bullets, and a dive into slow-motion despair.">
+                        <img src="assets/images/re.jpg" alt="Abandoned mansion" title="Umbrellas don’t just protect from rain… especially inside this mansion.">
+                        <img src="assets/images/y.jpg" alt="Vibrant Japanese city" title="Neon streets, karaoke nights, and a dragon's rise.">
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            This website was made with 💖 by <a href="https://www.linkedin.com/in/aleena-harold-peter/" target="_blank" rel="noopener">Aleena Harold Peter</a>
+        </footer>
+    </div>
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+
+        <span class="lightbox-prev">&#10094;</span>
+        <span class="lightbox-next">&#10095;</span>
+
+        <img class="lightbox-content" id="lightbox-img">
+        <p id="lightbox-title"></p>
+    </div>
+
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+
+
+
+<!--
+🌸 Personal Portfolio Website
+
+This is my personal portfolio website built using HTML and CSS.
+It highlights who I am, the projects I’ve worked on, and the technologies I’m continuously learning and exploring.
+
+The design focuses on clean structure, responsive layout, smooth animations, and subtle visual personality.
+
+🚀 Features
+
+Responsive, mobile-first layout
+
+Animated gradient text effects
+
+Slide-up entrance animations
+
+Smooth scrolling
+
+Reduced motion support (prefers-reduced-motion)
+
+System-based dark mode (prefers-color-scheme)
+
+Flexible image grid with hover effects
+
+🛠️ Built With
+
+HTML5
+
+CSS3 (Flexbox, media queries, animations)
+
+📂 Project Structure
+/assets
+   /gifs
+   /images
+index.html
+style.css
+
+🖼️ Image & GIF Credits
+
+The following visual assets are credited to their respective creators:
+
+Cat GIF
+GIF by Ilona S from Pixabay
+https://pixabay.com/users/winterflower-17292963/
+
+City Image
+Image by tonylee0619 from Pixabay
+https://pixabay.com/users/tonylee0619-675537/
+
+Courtroom-style Image
+Image by Mohamed Hassan from Pixabay
+https://pixabay.com/users/mohamed_hassan-5229782/
+
+Abandoned Mansion Photo
+Photo by Oktay Köseoğlu on Pexels
+https://www.pexels.com/photo/spooky-abandoned-mansion-18808366/
+
+All images are used in accordance with their respective platform licenses.☀️ Smiley Sun GIF
+
+GIF by Rafaela Rafa from Pixabay
+https://pixabay.com/users/rafabansi-43293407/-->
